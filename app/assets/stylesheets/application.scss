@@ -27,7 +27,7 @@ body {
   width: 80%;
 }
 
-.navbadefault {
+.navbar-default {
   background-color: #FFFFFF;
 }
 
@@ -104,4 +104,36 @@ body {
 }
 .avatar-full {
   width: 100%;
+}
+
+.form-group {
+  margin-bottom: 25px;
+}
+.form-control {
+  border-radius: 2px;
+  height: 4em;
+}
+
+.sidebar-list {
+  padding-left: 0;
+  list-style: none;
+}
+.sidebar-item {
+  padding: 10px 0;
+  font-size: 16px;
+  color: #82888A;
+  border-bottom: 1px solid #ccc;
+}
+.sidebar-link {
+  color: #82888A;
+  text-decoration: none;
+}
+.sidebar-link:hover, .sidebar-link:focus {
+  color: #cacccd;
+  text-decoration: none;
+}
+.sidebar-link-active {
+  color: #565a5c;
+  font-weight: bold;
+  text-decoration: none;
 }
