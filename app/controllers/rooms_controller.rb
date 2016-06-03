@@ -39,17 +39,18 @@ class RoomsController < ApplicationController
       @photos = @room.photos
     else
       redirect_to root_path, notice: "You don't have permission."
+    end
   end
 
   def update
     if @room.update(room_params)
+
       if params[:images]
         params[:images].each do |image|
           @room.photos.create(image: image)
         end
       end
-
-      redirect_to edit_room_path(@room) notice: "Room updated!"
+      redirect_to edit_room_path(@room), notice: "Room updated!"
     else
       render :edit
     end
