@@ -11,5 +11,6 @@ class Room < ActiveRecord::Base
   validates :listing_name, length: { maximum: 50 }
   validates :summary, length: { maximum: 500 }
   validates :cacheroute, length: { maximum: 600 }
+  validates :price, numericality: { only_integer: true, greater_than: 5 }
 
 end
