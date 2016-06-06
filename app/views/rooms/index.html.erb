@@ -11,7 +11,7 @@
         Listings
       </div>
       <div class="panel-body">
-        
+
         <% @rooms.each do |room| %>
           <div class="row">
             <div class="col-md-2">
@@ -24,6 +24,7 @@
               <%= link_to "Update", edit_room_path(room), class: "btn btn-primary" %>
             </div>
           </div>
+          <hr>
         <% end %>
 
       </div>
