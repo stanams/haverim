@@ -261,3 +261,14 @@ input[type="checkbox"]:focus {
   padding: 10px;
   margin-bottom: 10px;
 }
+
+// CONVERSATIONS UI
+
+.conversation {
+  color: #7F7F7F;
+  padding: 10px;
+}
+
+.conversation:hover, .conversation:focus {
+  background-color: #F4F4F5;
+}
