@@ -1,3 +1,6 @@
-// We append the new message without reloading all the other ones
-$('#chat').prepend("<%= j render @message %>");
+// This makes realtime update of messages in a given conversation
+<% publish_to conversation_messages_path(@conversation) do %>
+  // We append the new message without reloading all the other ones
+  $('#chat').prepend("<%= j render @message %>");
+<% end %>
 $("#new_message")[0].reset();
