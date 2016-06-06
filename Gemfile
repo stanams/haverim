@@ -22,6 +22,8 @@ gem 'omniauth-facebook'
 
 gem 'paperclip'
 
+gem 'geocoder'
+
 group :development, :test do
   gem 'byebug'
 end
