@@ -1,0 +1,3 @@
+// We append the new message without reloading all the other ones
+$('#chat').prepend("<%= j render @message %>");
+$("#new_message")[0].reset();
