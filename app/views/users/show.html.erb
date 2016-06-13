@@ -43,7 +43,7 @@
       <% end %>
     </div>
 
-    <h4>Reviews</h4>
+    <h4>Reviews (<%= @count %>)</h4>
     <% @rooms.each do |room| %>
       <% if !room.reviews.blank? %>
         <% room.reviews.each do |review| %>
