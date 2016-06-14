@@ -117,7 +117,7 @@
         <div class="row">
         <% @arrRooms.each do |room| %>
 
-          <div class="col-md-4">
+          <div class="col-md-6">
             <div class="panel panel-default">
               <div class="panel-heading preview">
                 <%= image_tag room.photos[0].image.url(:medium) if room.photos.length > 0 %>
@@ -159,4 +159,31 @@
     });
 
   })
+</script>
+
+<script>
+
+	$(function(){ // document ready
+
+	  if (!!$('.sticky').offset()) { // make sure ".sticky" element exists
+
+	    var stickyTop = $('.sticky').offset().top; // returns number
+
+	    $(window).scroll(function(){ // scroll event
+
+	      var windowTop = $(window).scrollTop(); // returns number
+
+	      if (stickyTop < windowTop){
+	        $('.sticky').css({ position: 'fixed', top: 0 });
+	      }
+	      else {
+	        $('.sticky').css('position','static');
+	      }
+
+	    });
+
+	  }
+
+	});
+
 </script>
