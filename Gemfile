@@ -31,6 +31,11 @@ gem 'thin'
 
 gem 'ransack'
 
+group :production do
+  gem 'newrelic_rpm'
+  gem 'rails_12factor' # error feedback
+end
+
 group :development, :test do
   gem 'byebug'
 end
